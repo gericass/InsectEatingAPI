@@ -18,7 +18,7 @@ def apiview(request):
         restaurantPosition = {"lat":float(i.lat),"lng":float(i.lng)}
         dist = search.dist_on_sphere(currentPosition,restaurantPosition)
         if dist <= 5:
-            obj.append({"name":i.name,"description":i.description,"address":i.address,"image":i.image})
+            obj.append({"name":i.name,"description":i.description,"address":i.address,"image":i.url})
 
     json_str = json.dumps(obj, ensure_ascii=False, indent=2)
 
