@@ -6,7 +6,7 @@ class restaurant(models.Model):
     name = models.CharField('店名',max_length=256)
     description = models.TextField('説明')
     address = models.CharField('住所',max_length=256)
-    url = models.TextField('画像')
+    url = models.TextField('画像',default="")
     lat = models.FloatField('緯度')
     lng = models.FloatField('経度')
 
