@@ -1,1 +1,1 @@
-web: gunicorn animeapi.wsgi --log-file -
+web: gunicorn InsectServer.wsgi --log-file -
